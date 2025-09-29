@@ -1,28 +1,46 @@
-# Remove-Background-Python-API-Key
-Remove Background Python Using api Key
+<h1>Remove Background Python OpenCV</h1>
 
-Import Libraries: The code begins by importing the necessary libraries:
+<h3>Overview</h3>
+A Python tool to remove image backgrounds using the remove.bg API, designed for educational and research purposes only.
 
-requests: A library for making HTTP requests to the remove.bg API.
-shutil: A utility module for high-level file operations.
-Define Function remove_background_with_api:
+<h3>Disclaimer</h3>
+For educational use only. Comply with all laws and remove.bg API terms. Use at your own risk.<br>
+Copyright: © 2025 asankaxgit. All Rights Reserved. Unauthorized reproduction or distribution is prohibited.
 
-This function takes the remove.bg API key (api_key), the path to the input image (input_image_path), and the path where the output image with the background removed will be saved (output_image_path).
-It constructs the URL of the remove.bg API endpoint.
-Sets the headers for the HTTP request, including the API key.
-Prepares the image data to be sent in the request body.
-Sends an HTTP POST request to the remove.bg API endpoint with the image data.
-If the response status code is 200 (OK), it saves the resulting image with the background removed to the specified output image path using shutil.copyfileobj.
-If the response status code is not 200, it prints an error message along with the status code and response text.
-Set remove.bg API Key and Input/Output Paths:
+<h3>Features</h3>
+Removes image backgrounds via remove.bg API.<br>
+Lightweight, using requests and shutil.<br>
+Simple to use with clear error messages.
 
-The remove.bg API key (api_key) is set to the provided key.
-The input image path (input_image_path) is set to the path of the image from which the background will be removed.
-The output image path (output_image_path) is set to the path where the resulting image with the background removed will be saved.
-Call the Function to Remove Background:
+<h3>Prerequisites</h3>
+Python 3.x<br>
+requests library (pip install requests)<br>
+remove.bg API key (remove.bg)<br>
+Input image (e.g., .jpg, .png)
 
-The remove_background_with_api function is called with the provided remove.bg API key, input image path, and output image path to remove the background from the input image using the remove.bg API.
-Output and Error Handling:
+<h3>Installation</h3>
+Clone the repository:git clone https://github.com/asankaxgit/Remove-Background-Python-OpenCV.git<br>
+cd Remove-Background-Python-OpenCV
 
-If the background removal is successful, a message indicating success is printed.
-If there is an error during the background removal process, an error message along with the status code and response text is printed.
+<h3>Install requests:pip install requests</h3>
+
+
+<h3>Get a remove.bg API key.</h3>
+
+<h3>Usage</h3>
+Update removebg.py with your API key and image paths:api_key = "your-api-key-here"<br>
+input_image_path = "input.jpg"<br>
+output_image_path = "output.png"
+
+
+<h3>Run the script:python3 removebg.py</h3>
+
+<h3>Important Notes</h3>
+API Key Security: Store your API key securely (e.g., use environment variables).<br>
+API Limits: Check remove.bg for usage limits.<br>
+Legal Use: Follow remove.bg terms and applicable laws.
+
+<h3>License</h3>
+© 2025 asankaxgit. All Rights Reserved. See LICENSE for details.
+Contact<br>
+Open an issue on the GitHub repository or email asankax@proton.me.
